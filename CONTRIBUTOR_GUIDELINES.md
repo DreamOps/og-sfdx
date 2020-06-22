@@ -100,6 +100,7 @@ Finally, as a general reference, please observe the [Salesforce Style Guide for 
 [Obtained under the JoyPixels Free License](https://www.joypixels.com/licenses/free).
  - Info ![(info)](info-16px.png)
  - Help ![(help)](help-16px.png)
+ - Pray ![(pray)](pray-16px.png)
  - Star ![(star)](star-16px.png)
  - Warn ![(warn)](warn-16px.png)
 

@@ -3,6 +3,12 @@
 ![(info)](info-16px.png) This guide covers the **First Generation Packaging** toolset (1GP).
  -   At some point, the new Second Generation Packaging would be covered here or in a companion guide.
 
+---  
+
+**The Salesforce Packaging Invocation**
+
+![(pray)](pray-16px.png) Grant to us the courage to change that which can be changed, the serenity of mind to accept that which cannot be changed, and enough documentation to know the one from the other.
+
 ---
 
 **Top Tips**
@@ -14,12 +20,6 @@
  -   [Renew Active Development Orgs Before They Expire](renew-active-development-orgs-before-they-expire).
 
 See the full content for more about these tips.
-
----  
-
-**The Salesforce Packaging Invocation**
-
-- Grant to us the courage to change that which can be changed, the serenity of mind to accept that which cannot be changed, and enough documentation to know the one from the other.
 
 ---
 
