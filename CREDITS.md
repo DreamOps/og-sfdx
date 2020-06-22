@@ -1,6 +1,8 @@
 # Credits
 
-This Open Guide is a collaborative effort. The content is the result of a growing community of contributors. Please help if you can. 
+Open Guides are a collaborative effort. The content arises from a growing community of contributors. 
+
+Pray ![(pray)](pray-16px.png) Please help if you can. 
 
 While the current focus is packaging, the scope of this guide can be increased to include all aspect of the SFDX platform -- given knowledgeable contributors (like you!). 
 
