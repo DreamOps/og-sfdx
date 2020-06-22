@@ -3,6 +3,12 @@
 ![(info)](info-16px.png) This guide covers the **First Generation Packaging** toolset (1GP).
  -   At some point, the new Second Generation Packaging would be covered here or in a companion guide.
 
+---  
+
+**The Salesforce Packaging Invocation**
+
+![(pray)](pray-16px.png) Grant to us the courage to change that which can be changed, the serenity of mind to accept that which cannot be changed, and enough documentation to know the one from the other.
+
 ---
 
 **Top Tips**
@@ -14,12 +20,6 @@
  -   [Renew Active Development Orgs Before They Expire](renew-active-development-orgs-before-they-expire).
 
 See the full content for more about these tips.
-
----  
-
-**The Salesforce Packaging Invocation**
-
-- Grant to us the courage to change that which can be changed, the serenity of mind to accept that which cannot be changed, and enough documentation to know the one from the other.
 
 ---
 
@@ -220,8 +220,7 @@ A good companion to a set of checklists is a page outlining your packaging polic
 Each package has a full-name, description, and namespace. The namespace is mainly for developer use, but it is shown on the Installed Packages page. The full-name and description can be updated, but the namespace is permanent and can never be changed.
  - Review how other packages approach namespaces, and consider developing a style guide for namespaces before creating your first package. – It's rarely your last.
  - Remember there are a lot of packages sharing a 15-character range for namespaces. It's unlikely you will be able to claim anything short and obvious.
- - Apex is suppose to be case-insensitive, but there are spots where the namespace is expected to be rendered in upper case.
-     - ![(help)](help-16px.png) Consider using upper case when you first specify the namespace in your Developer Edition packaging org.
+ - Apex is suppose to be case-insensitive, but there are spots where the namespace is expected to be rendered in upper case, and other times in lower case. Pick your poison.
 
 ### On an Object, Don't Package an "All" List View
 If you do, then subscribers are faced with two "All" list views, the original implicit All list view and the one from your package. The list views are subscriber deletable, so it's a quick fix on the customer side, but, it's not a professional look for your solution.
@@ -316,7 +315,7 @@ Once a version is released, global method signatures cannot be changed; global c
          -   ![(warn)]warn-16px.png) Global scope is  **only**  needed to call a member from  _outside_  your package.
     - Global immutability extends to interfaces as well, which can sometimes be a surprise.
 
-### Avoid the Salesforce  [Deprecation annotation](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_annotation_deprecated.htm) 
+### Avoid the Salesforce [Deprecation annotation](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_annotation_deprecated.htm) 
 If a global should not be used, raise an exception instead instructing the consumer as to what to do instead.  
  - If you mark an existing class as deprecated with the annotation, and upload it as part of your package, two things happen:  
     1. That method cannot be used in  **new**  subscriber orgs, but it remains visible to orgs that had the earlier version of the package installed, before it was deprecated.  
