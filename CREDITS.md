@@ -2,11 +2,11 @@
 
 Open Guides are a collaborative effort. The content arises from a growing community of contributors. 
 
-Pray ![(pray)](pray-16px.png) Please help if you can. 
+![(pray)](pray-16px.png) Please help if you can. 
 
 While the current focus is packaging, the scope of this guide can be increased to include all aspect of the SFDX platform -- given knowledgeable contributors (like you!). 
 
-Info ![(info)](info-16px.png) See the [Contributor Guidelines](CONTRIBUTOR_GUIDELINES.md) for notes on roles and editorial process.
+![(help)](help-16px.png) See the [Contributor Guidelines](CONTRIBUTOR_GUIDELINES.md) for notes on roles and editorial process.
 
 ## Project Lead
 
