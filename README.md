@@ -41,6 +41,7 @@ Please help by contributing to the guide so, unlike a blog, it can continuously 
 
 ![(info)](info-16px.png) For more user-to-user advice, see also:
 
+ - [D2X](https://d2x.readthedocs.io/en/latest/)
  - [Unofficial SF - Guides, Installable Actions and Components for Salesforce’s Automation Products.](https://unofficialsf.com)
  - [Salesforce Stack Exchange](https://salesforce.stackexchange.com)
 
