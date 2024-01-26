@@ -500,6 +500,33 @@ During milestone development, it is safer to withhold upgrading the base package
 Salesforce publishes regular alerts to be sure partners are ready for upcoming changes. It's a good idea to assign someone to watch the alerts and track whether you are affected by each alert, and, if so, your response.
  - See [Partner Community News Events](https://partners.salesforce.com/partnerNewsEvents) (partners.salesforce.com).
 
+## Tips - Salesforce Version Numbers
+Salesforce supports a three-part version number, where each part is an integer – major.minor.patch. 
+
+When uploading from the packaging org, we can increase the major or minor number by one or more (but never decrease). Otherwise, the minor number increases by one automatically. 
+
+For simplicity, a major.minor version is referred to as a “major” version in Salesforce parlence.
+
+A patch org can be created from any version in the packaging org. The patch org is a copy of the packaging org as of when the version was created. 
+
+The changes we make in the patch org are not automatically reflected in the packaging org, and we have to be careful to keep the changes syncronized so that a future major version does not roll back a change we made in a patch version. 
+
+Of course, only changes to existing components can be made in a patch version, and no new components can be added.
+
+The version numbers in a patch org advance automatically and cannot be increased. We have to upload #.#.1 followed by #.#.2 and so forth. 
+
+Creating a patch org is a separate step and it adds overhead to the overall process.
+
+On rare occasions, the patch org provisioning fails and Salesforce support has to fix the org before we can. use it – which can take days, 
+
+Patch orgs are a necessary evil and should be used sparingly. It’s always better to create a major version – when we can – to be sure the changes roll over to the next version automatically. 
+
+Usually, we are using a patch org to hotfix a version that’s already in production. 
+
+Sometimes that means we create a change in the patch org that has not been created in a major version yet. 
+
+It’s our responsiblity to be sure the change we make is reflected in both the packaging org and the patch org, and that changes hotfixed to the current production version are also made in the next production version, so that the change doesn’t regress for any customer who installed the patch version. 
+
 ## Tips - Patch Versions
 Maintenance releases can be a great way to keep subscribers happy, so long as all the changes are kept in sync.
 
